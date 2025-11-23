@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+/* this is section carousel home */
+.carousel{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+#picture{
+    width: 100VW;
+    height: 450px;
+    transform: scale();
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255,255, 0.5);
+    z-index: 1;
+}
+.carousel-button{
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color:#e96b56;
+    z-index:2 ;
+}
+.carousel-button a{
+    color:white;
+    text-decoration: none;
+}
+.carousel-caption{
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.carousel-caption h2{
+    padding-bottom: 30px;
+    color: #545454;
+}
+.carousel-caption p{
+    color: #54545475;
+    padding-bottom: 20px;
+    width: 700px;
+}
+.carousel-control-prev{
+   color: coral;
+}
+/* fin section carousel */
+/* footer */
+.footer{
+    width: 100vw;
+    height: 200vh;
+}
