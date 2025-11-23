@@ -89,7 +89,7 @@
 
 /*  &section of client  */
 .clients-section{
-        text-align: center;
+    text-align: center;
 }
 
 #clients-id h2 .border-class
@@ -202,10 +202,10 @@
     background-color: #464646;
 }
 .footer-input{
-    width: 700px;
-      position: relative;
-      padding-top: 10px;
-}
+        width: 700px;
+        position: relative;
+        padding-top: 10px;
+    }
 .footer-input:hover button{
     background-color:#e96b56 ;  
     border-color: #e96b56;
@@ -279,19 +279,19 @@
 .left-info h3{
     padding-bottom: 30px;
 }
-.left-links{
-height: 350px;
- display: grid;
-   grid-template-rows:60px 40px 40px 40px 40px;
-   padding-top: 30px;
-}
+    .left-links{
+    height: 350px;
+    display: grid;
+    grid-template-rows:60px 40px 40px 40px 40px;
+    padding-top: 30px;
+    }
 .right-services{
 height: 350px;
-display: grid;
-      grid-template-rows:60px 40px 40px 40px 40px;
-      padding-top: 30px;
+    display: grid;
+        grid-template-rows:60px 40px 40px 40px 40px;
+        padding-top: 30px;
 
-}
+    }
 .right{
 height: 350px;
 padding-top: 30px;
@@ -376,6 +376,7 @@ color: #FFFFFF;
 }
 
 .icon{
+    height: 15vh;
     font-size: 40px;
     color: #db5050;
 }
