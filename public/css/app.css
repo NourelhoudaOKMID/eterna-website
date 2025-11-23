@@ -519,6 +519,7 @@ color: #FFFFFF;
 }
 
 .icon{
+    height: 15vh;
     font-size: 40px;
     color: #db5050;
 }
