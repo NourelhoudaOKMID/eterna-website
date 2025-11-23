@@ -1,3 +1,80 @@
+
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+    /*NAVBAR LINKS (underline + red)*/
+    .navbar .nav-link:hover {
+    color: #ff6f5b;
+    
+    text-decoration-color: #ff6f5b;
+    }
+
+    /* SOCIAL ICON HOVER */
+    .social-icon {
+    transition: 0.3s;
+    cursor: pointer;
+    }
+    .social-icon:hover {
+    color: #ff6f5b;
+    }
+
+    /*PHONE (red only, NO underline) */
+    .topbar-link {
+    text-decoration: none;
+    transition: 0.3s;
+    }
+    .topbar-link:hover {
+    color: #ff6f5b;
+    text-decoration: none;    
+    }
+
+    /*  EMAIL (underline + red) */
+    .mail-link {
+    text-decoration: none;
+    transition: 0.3s;
+    }
+    .mail-link:hover {
+    color: #ff6f5b;
+    text-decoration: underline;
+    text-decoration-color: #ff6f5b;
+    }
+    .hover-email:hover {
+    color: #ff6f5b;
+    }
+
+    /* Border rouge à gauche du logo */
+    .logo-border {
+    position: relative;
+    padding-left: 0.5rem; /* espace entre le border et le texte */
+    color: #db5050; 
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+            /* border */
+    .logo-border::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 60%;
+    width: 7px; /* épaisseur de la ligne */
+    background-color: #ff6f5b; 
+    }
+
+    /* ! i just want to fix the hover for dropdown  */
+    /* .dropdown-menu > .dropdown-item:hover{
+        color: #ff6f5b;
+
+    } */
+    /* DROPDOWN ITEMS */
+    .dropdown-item:hover {
+    color: #5bff61;
+    }
+
 *{
     padding: 0;
     margin: 0;
@@ -5,6 +82,55 @@
     text-decoration: none;
     
 }
+
+
+
+
+
+/*  &section of client  */
+.clients-section{
+        text-align: center;
+}
+
+#clients-id h2 .border-class
+{
+    border-bottom: 5px solid  #db5050;
+    padding-bottom:15px ;
+
+
+}
+
+#clients-id h2.border-class {
+    border-bottom: 3px solid #db5050;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.images-box   > img{
+    width: 10vw;
+    height: 10vh;
+
+}
+
+
+.images-box > img{
+    color: #333;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+    filter: grayscale(100);
+
+}
+
+.images-box > img:hover{
+    filter: none;
+    opacity: 1;
+}
+
+
+
+/* & the end of section of client  */
+
 /* this is section carousel home */
 .carousel{
     width: 99vw;
@@ -326,3 +452,79 @@ color: #FFFFFF;
    
    
 
+
+
+/* *   file about  */
+
+
+
+/* section statistiques  */
+
+.stats-section{
+    /* background-color: #5bff61; */
+    padding: 50px ;
+}
+.stats-box{
+    max-width:1200px ;
+    margin : auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+.stat-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.icon{
+    font-size: 40px;
+    color: #db5050;
+}
+.stat-text > h3 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+    color: #4f4e4e;
+}
+
+.stat-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #545353;
+}
+.stat-text p{
+    
+    font-size: 15px;
+    color: #919191;
+}
+
+/*  *  animation  */
+.stat-item{
+    opacity: 0;
+    transform: translate(20px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+.stat-item:nth-child(1){
+    animation-delay: 0.1s;
+}
+.stat-item:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stat-item:nth-child(3){
+    animation-delay: 0.5s;
+}
+.stat-item:nth-child(4){
+    animation-delay: 0.7s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+
+}
+/* * end animation  */
