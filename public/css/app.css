@@ -58,7 +58,7 @@
     background-color: #ff6f5b; 
     }
 
-    /* ! i just want to fix the hover for dropdown item */
+    /* ! i just want to fix the hover for dropdown ite */
     /* .dropdown-menu > .dropdown-item:hover{
         color: #ff6f5b;
 
@@ -75,6 +75,40 @@
     text-decoration: none;
     
 }
+
+
+
+
+
+/*  &section of client  */
+.clients-section{
+        text-align: center;
+}
+
+
+.images-box   > img{
+    width: 10vw;
+    height: 10vh;
+
+}
+
+.images-box > img{
+    color: #333;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+    filter: grayscale(100);
+
+}
+
+.images-box > img:hover{
+    filter: none;
+    opacity: 1;
+}
+
+
+
+/* & the end of section of client  */
 /* this is section carousel home */
 .carousel{
     width: 100vw;
