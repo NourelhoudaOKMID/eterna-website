@@ -379,7 +379,6 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
         justify-content: space-between;
-
    }
    .test-child{
     width: 80;
