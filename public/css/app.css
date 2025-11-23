@@ -58,9 +58,14 @@
     background-color: #ff6f5b; 
     }
 
+    /* ! i just want to fix the hover for dropdown item */
+    /* .dropdown-menu > .dropdown-item:hover{
+        color: #ff6f5b;
+
+    } */
     /* DROPDOWN ITEMS */
     .dropdown-item:hover {
-    color: #ff6f5b;
+    color: #5bff61;
     }
 
 *{
