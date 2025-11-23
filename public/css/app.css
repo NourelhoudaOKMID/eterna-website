@@ -65,7 +65,7 @@
     background-color: #ff6f5b; 
     }
 
-    /* ! i just want to fix the hover for dropdown ite */
+    /* ! i just want to fix the hover for dropdown  */
     /* .dropdown-menu > .dropdown-item:hover{
         color: #ff6f5b;
 
@@ -92,6 +92,19 @@
         text-align: center;
 }
 
+#clients-id h2 .border-class
+{
+    border-bottom: 5px solid  #db5050;
+    padding-bottom:15px ;
+
+
+}
+
+#clients-id h2.border-class {
+    border-bottom: 3px solid #db5050;
+    padding-bottom: 10px;
+    display: inline-block;
+}
 
 .images-box   > img{
     width: 10vw;
