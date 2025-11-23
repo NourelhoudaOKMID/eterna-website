@@ -221,4 +221,108 @@ color: #FFFFFF;
 }
   /* about page ---------------------------------------------------------------------------------------------------------------------------------------------------------
    */
+.test-child > .left-child > div img{
+    width: 70px;
+
+   }
+   .test-child > .right-child > div img{
+    width: 70px;
+   }
+   .testimonials{
+    width: 99vw;
+    height: 150vh;
+    background-color: #f9f6f5;
+   }
+   .test-top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #545454;
+    
+   }
+   .test-top p{
+    padding-top: 10px;
+    color: #545454;
+   }
+   .test-bottom{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+        justify-content: space-between;
+
+   }
+   .test-child{
+    width: 80;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 100px;
+   }
+   .left-child{
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 80%;
+    box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0,18);
+    transform: translateY( 20px);
+   }
+   .right-child{
+    width: 50%;
+    height: 80%;
+    background-color: #FFFFFF;
+    transform: translateY(10px);
+   }
+   .parent-lf{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    transition: 1s;
+   }
+   .parent-lf img{
+    border-radius: 50%;
+   }
+   .parent-rt{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    transition: 1s;
+   }
+   .parent-rt img{
+    border-radius: 50%;
+   }
+   .rt-ch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    
+   }
+   .p-b{
+    padding-left: 10px;
+   }
+   
+   .stars > span i{
+    color:#FFC107;
+   }
+   .stars{
+    padding-bottom: 30px;
+    width: 200px;
+    padding-left: 10px;
+    
+   }
+   .rt-ch p{
+    width: 160px;
+    padding-bottom: px;
+   }
+   .after{
+    border-bottom: 2px solid #e96b56;
+    width: 50px;
+    height: 10px;
+   }
+   
+   
 
