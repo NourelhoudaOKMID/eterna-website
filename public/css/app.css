@@ -1,3 +1,73 @@
+
+    /*NAVBAR LINKS (underline + red)*/
+    .navbar .nav-link:hover {
+    color: #ff6f5b;
+    
+    text-decoration-color: #ff6f5b;
+    }
+
+    /* SOCIAL ICON HOVER */
+    .social-icon {
+    transition: 0.3s;
+    cursor: pointer;
+    }
+    .social-icon:hover {
+    color: #ff6f5b;
+    }
+
+    /*PHONE (red only, NO underline) */
+    .topbar-link {
+    text-decoration: none;
+    transition: 0.3s;
+    }
+    .topbar-link:hover {
+    color: #ff6f5b;
+    text-decoration: none;    
+    }
+
+    /*  EMAIL (underline + red) */
+    .mail-link {
+    text-decoration: none;
+    transition: 0.3s;
+    }
+    .mail-link:hover {
+    color: #ff6f5b;
+    text-decoration: underline;
+    text-decoration-color: #ff6f5b;
+    }
+    .hover-email:hover {
+    color: #ff6f5b;
+    }
+
+    /* Border rouge à gauche du logo */
+    .logo-border {
+    position: relative;
+    padding-left: 0.5rem; /* espace entre le border et le texte */
+    color: #333; 
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+
+    .logo-border::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 60%;
+    width: 7px; /* épaisseur de la ligne */
+    background-color: #ff6f5b; 
+    }
+
+    /* ! i just want to fix the hover for dropdown item */
+    /* .dropdown-menu > .dropdown-item:hover{
+        color: #ff6f5b;
+
+    } */
+    /* DROPDOWN ITEMS */
+    .dropdown-item:hover {
+    color: #5bff61;
+    }
+
 *{
     padding: 0;
     margin: 0;
@@ -58,7 +128,7 @@
     width: 700px;
 }
 .carousel-control-prev{
-   color: coral;
+    color: coral;
 }
 /* fin section carousel */
 /* footer */
