@@ -5,7 +5,6 @@
     box-sizing: border-box;
     text-decoration: none;
     /*  pour empêcher le side scroll global */
-    overflow-x: hidden;
 }
     /*NAVBAR LINKS (underline + red)*/
     .navbar .nav-link:hover {
