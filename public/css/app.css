@@ -201,10 +201,53 @@
 .icons div{
     height: 230px;
     /* background-color: #e96b56; */
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.3s ease;
 }
+ 
+.icons div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: #e96b56;
+    z-index: -1;
+    transition: 0.6s ease;
+}
+
+.icons div:hover::before {
+    bottom: 0;
+}
+
+
+.icons div * {
+    position: relative;
+    z-index: 2;
+}
+
+
+.icons i {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+.icons div:hover h2,
+.icons div:hover p,
+.icons div:hover i {
+    color: white;
+}
+
 .icons div:hover{
     background-color: #e96b56;
-    box-shadow: 3px 10px #e6e4e3
+    box-shadow: 3px 10px #e6e4e3;
 }
  .did:hover{
     color: #e6e4e3;
@@ -321,7 +364,7 @@
 
 .card:hover {
     transform: translateY(-6px);
-    background: rgba(102, 59, 59, 0.7);
+    background: #e96b56;
 }
 
 .card h2 {
