@@ -4,7 +4,8 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    
+    /*  pour empêcher le side scroll global */
+    overflow-x: hidden;
 }
     /*NAVBAR LINKS (underline + red)*/
     .navbar .nav-link:hover {
@@ -111,7 +112,7 @@
     height: 10vh;
 
 }
-
+/* transition  */
 
 .images-box > img{
     color: #333;
@@ -212,7 +213,7 @@
     background: #fff;
     transition: 0.3s ease;
 }
- 
+ /* transition */
 .icons div::before {
     content: "";
     position: absolute;
@@ -804,3 +805,171 @@ color: #FFFFFF;
 .container-bg {
     background-color: #eceded;
 }
+
+
+
+
+
+/* Variables */
+.portfolio-filters:hover{
+    color: #db5050;
+}
+
+/* Boutons filtres */
+.filter-btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s;
+}
+.filter-btn:hover {
+  color: #ff6f5b;
+}
+
+/* Items portfolio par défaut */
+.portfolio-item {
+  transition: all 0.5s ease;
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Hover: overlay et icônes */
+.portfolio-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-content img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: block;
+  width: 60%;
+  height: 60%;
+}
+
+
+/*  Assure que le container portfolio ne dépasse pas */
+.container-portfolio {
+  padding-left: 15px;  
+  padding-right: 15px;
+}
+
+/*  ce code c'est pour Supprime marges négatives de la row */
+.portfolio-container.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.portfolio-content:hover img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.portfolio-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.portfolio-content:hover .portfolio-icons {
+  opacity: 1;
+}
+
+/* CSS-only filtre par catégorie (exemple pour App) */
+/* ALL visible */
+#filter-all:checked ~ .portfolio-container .portfolio-item {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+/* App - seulement 3 visibles */
+#filter-app:checked ~ .portfolio-container .filter-app:nth-child(1),
+#filter-app:checked ~ .portfolio-container .filter-app:nth-child(2),
+#filter-app:checked ~ .portfolio-container .filter-app:nth-child(5) {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+#filter-app:checked ~ .portfolio-container .filter-app:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(5)) {
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+/* Product - seulement 3 visibles */
+#filter-product:checked ~ .portfolio-container .filter-product:nth-child(4),
+#filter-product:checked ~ .portfolio-container .filter-product:nth-child(5),
+#filter-product:checked ~ .portfolio-container .filter-product:nth-child(6) {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+#filter-product:checked ~ .portfolio-container .filter-product:not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(6)) {
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+/* Branding - seulement 3 visibles */
+#filter-branding:checked ~ .portfolio-container .filter-branding:nth-child(7),
+#filter-branding:checked ~ .portfolio-container .filter-branding:nth-child(8),
+#filter-branding:checked ~ .portfolio-container .filter-branding:nth-child(9) {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+#filter-branding:checked ~ .portfolio-container .filter-branding:not(:nth-child(7)):not(:nth-child(8)):not(:nth-child(9)) {
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+/* Books - seulement 3 visibles */
+#filter-books:checked ~ .portfolio-container .filter-books:nth-child(10),
+#filter-books:checked ~ .portfolio-container .filter-books:nth-child(11),
+#filter-books:checked ~ .portfolio-container .filter-books:nth-child(12) {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+#filter-books:checked ~ .portfolio-container .filter-books:not(:nth-child(10)):not(:nth-child(11)):not(:nth-child(12)) {
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+}
+/* Container-Portfolio Animation */
+.container-portfolio {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Transition pour tous les éléments enfants */
+.container-portfolio * {
+  transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
