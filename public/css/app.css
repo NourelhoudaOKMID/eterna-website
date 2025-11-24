@@ -198,6 +198,10 @@
     margin: 20;
     
 }
+/* & do it by meriem jabrane  */
+.icons{
+    padding-left: 40px ;
+}
 .icons div{
     height: 230px;
     /* background-color: #e96b56; */
@@ -246,18 +250,29 @@
 }
 
 .icons div:hover{
+    /* color: white;  */
     box-shadow: 3px 10px #e6e4e3;
     transform: translateY(-15px);
 }
- .did:hover{
-    color: #e6e4e3;
-} 
-.did{
-    
-    padding: 20px;
-   color: #e96b56;
-   text-align: center;
+    .did:hover{
+        color: #e6e4e3;
+    } 
+    .did{
+        
+        padding: 20px;
+    color: #e96b56;
+    text-align: center;
+    }
+
+/* & do it by meriem jabrane  */
+.tem{
+    margin-top: 10px;
 }
+.cont{
+    padding: 50px  40px;
+} 
+/* & end  */
+
 
 /* .tem{ 
     display: grid;
@@ -267,9 +282,7 @@
 .tems{
     width: 700px;
 }
-.cont{
-    width: 700px;
-} */
+*/
  .voluptatem {
     width: 100%;
     padding: 40px 60px;
