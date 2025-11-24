@@ -400,7 +400,43 @@
     opacity: 0.9;
 }
 
+ .skills {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+}
 
+.skills h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.skills .intro {
+    text-align: center;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
 @media(max-width: 900px) {
     .icons{
         flex-direction: column;
