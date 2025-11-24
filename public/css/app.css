@@ -187,6 +187,210 @@
    color: coral;
 }
 /* fin section carousel */
+/* this is info */
+.icons{
+    width: 90vw;
+    /* background-color: rgb(89, 82, 82); */
+   
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20;
+    
+}
+.icons div{
+    height: 230px;
+    /* background-color: #e96b56; */
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.3s ease;
+}
+ 
+.icons div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: #e96b56;
+    z-index: -1;
+    transition: 0.6s ease;
+}
+
+.icons div:hover::before {
+    bottom: 0;
+}
+
+
+.icons div * {
+    position: relative;
+    z-index: 2;
+}
+
+
+.icons i {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+.icons div:hover h2,
+.icons div:hover p,
+.icons div:hover i {
+    color: white;
+}
+
+.icons div:hover{
+    background-color: #e96b56;
+    box-shadow: 3px 10px #e6e4e3;
+}
+ .did:hover{
+    color: #e6e4e3;
+} 
+.did{
+    
+    padding: 20px;
+   color: #e96b56;
+   text-align: center;
+}
+
+/* .tem{ 
+    display: grid;
+    column-gap: 20px;
+    grid-template-rows: repeat(2fr);
+}
+.tems{
+    width: 700px;
+}
+.cont{
+    width: 700px;
+} */
+ .voluptatem {
+    width: 100%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+.tem {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.cont {
+    flex: 1;
+}
+
+.cont h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #333;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.cont ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cont ul li {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.5;
+}
+.subtitle{
+    color: rgb(208, 204, 204);
+}
+
+.cont p {
+    margin-top: 20px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 90%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+
+/* & the end of section of client  */
+.box {
+    padding: 60px 40px;
+    background: url("CHEMIN-DE-TA-IMAGE.jpg") center/cover no-repeat;
+    backdrop-filter: blur(3px);
+}
+
+.row1, .row2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 25px;
+    border-radius: 12px;
+    width: 32%;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card i, .card svg {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #ffd700; 
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: #e96b56;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+@media(max-width: 900px) {
+    .row1, .row2 {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }.tem {
+        flex-direction: column;
+    }
+    
+}
 /* footer */
 .footer{
     width: 99vw;
@@ -379,7 +583,6 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
         justify-content: space-between;
-
    }
    .test-child{
     width: 80;
@@ -449,7 +652,46 @@ color: #FFFFFF;
     width: 50px;
     height: 10px;
    }
-   
+   /* team page-------------------------------------------------------------------------------------------------------------------------------------------------------- */
+   .team-member {
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.team-member h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.team-member span {
+  display: block;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.team-member .social a {
+  margin-right: 10px;
+  color: #444;
+  transition: 0.3s;
+}
+
+.team-member .social a:hover {
+  color: #f44430;
+}
    
 
 
@@ -461,7 +703,6 @@ color: #FFFFFF;
 /* section statistiques  */
 
 .stats-section{
-    /* background-color: #5bff61; */
     padding: 50px ;
 }
 .stats-box{
@@ -528,4 +769,6 @@ color: #FFFFFF;
     }
 
 }
+/* /* * end animation   */
+/* end */
 /* * end animation  */
