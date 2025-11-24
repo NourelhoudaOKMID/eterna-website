@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    
+    /*  pour empêcher le side scroll global */
 }
     /*NAVBAR LINKS (underline + red)*/
     .navbar .nav-link:hover {
@@ -89,7 +89,7 @@
 
 /*  &section of client  */
 .clients-section{
-        text-align: center;
+    text-align: center;
 }
 
 #clients-id h2 .border-class
@@ -111,7 +111,7 @@
     height: 10vh;
 
 }
-
+/* transition  */
 
 .images-box > img{
     color: #333;
@@ -198,23 +198,81 @@
     margin: 20;
     
 }
+/* & do it by meriem jabrane  */
+.icons{
+    padding-left: 40px ;
+}
 .icons div{
     height: 230px;
     /* background-color: #e96b56; */
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.3s ease;
 }
+ /* transition */
+.icons div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: #e96b56;
+    z-index: -1;
+    transition: 0.6s ease;
+}
+
+.icons div:hover::before {
+    bottom: 0;
+}
+
+
+.icons div * {
+    position: relative;
+    z-index: 2;
+}
+
+
+.icons i {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+.icons div:hover h2,
+.icons div:hover p,
+.icons div:hover i {
+    color: white;
+}
+
 .icons div:hover{
-    background-color: #e96b56;
-    box-shadow: 3px 10px #e6e4e3
+    /* color: white;  */
+    box-shadow: 3px 10px #e6e4e3;
+    transform: translateY(-15px);
 }
- .did:hover{
-    color: #e6e4e3;
+    .did:hover{
+        color: #e6e4e3;
+    } 
+    .did{
+        
+        padding: 20px;
+    color: #e96b56;
+    text-align: center;
+    }
+
+/* & do it by meriem jabrane  */
+.tem{
+    margin-top: 10px;
+}
+.cont{
+    padding: 50px  40px;
 } 
-.did{
-    
-    padding: 20px;
-   color: #e96b56;
-   text-align: center;
-}
+/* & end  */
+
 
 /* .tem{ 
     display: grid;
@@ -224,9 +282,7 @@
 .tems{
     width: 700px;
 }
-.cont{
-    width: 700px;
-} */
+*/
  .voluptatem {
     width: 100%;
     padding: 40px 60px;
@@ -316,13 +372,22 @@
 .card i, .card svg {
     font-size: 40px;
     margin-bottom: 15px;
-    color: #ffd700; 
+    /* color: #ffd700;  */
 }
 
 .card:hover {
     transform: translateY(-6px);
-    background: rgba(102, 59, 59, 0.7);
+    background: #e96b56;
+    color: white;
 }
+.cart div, .box-shadow{
+    border: 1px solid;
+   padding: 10px;
+   box-shadow: 5px 10px #fbe1dd;
+   background: #e96b56;
+   padding: 10px;
+
+ }
 
 .card h2 {
     font-size: 20px;
@@ -335,8 +400,71 @@
     opacity: 0.9;
 }
 
+ .skills {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.skills .intro {
+    text-align: center;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.titpar{
+    text-align: center;
+}
+.titpar ,h1{
+    font-size: 2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+.underline {
+  display: inline-block;
+  width: 60px;         
+  height: 4px;         
+  background-color: #e32636; 
+  border-radius: 2px;  
+}
+/* .skills{
+ 
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+}  */
 
 @media(max-width: 900px) {
+    .icons{
+        flex-direction: column;
+    }
     .row1, .row2 {
         flex-direction: column;
     }
@@ -363,10 +491,10 @@
     background-color: #464646;
 }
 .footer-input{
-    width: 700px;
-      position: relative;
-      padding-top: 10px;
-}
+        width: 700px;
+        position: relative;
+        padding-top: 10px;
+    }
 .footer-input:hover button{
     background-color:#e96b56 ;  
     border-color: #e96b56;
@@ -440,19 +568,19 @@
 .left-info h3{
     padding-bottom: 30px;
 }
-.left-links{
-height: 350px;
- display: grid;
-   grid-template-rows:60px 40px 40px 40px 40px;
-   padding-top: 30px;
-}
+    .left-links{
+    height: 350px;
+    display: grid;
+    grid-template-rows:60px 40px 40px 40px 40px;
+    padding-top: 30px;
+    }
 .right-services{
 height: 350px;
-display: grid;
-      grid-template-rows:60px 40px 40px 40px 40px;
-      padding-top: 30px;
+    display: grid;
+        grid-template-rows:60px 40px 40px 40px 40px;
+        padding-top: 30px;
 
-}
+    }
 .right{
 height: 350px;
 padding-top: 30px;
@@ -540,7 +668,6 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
         justify-content: space-between;
-
    }
    .test-child{
     width: 80;
@@ -733,7 +860,7 @@ color: #FFFFFF;
 
 }
 /* /* * end animation   */
-/* end */
+
 /* * end animation  */
 /* contact */
 .section-contact{
@@ -810,3 +937,195 @@ color: #FFFFFF;
     left: 5px;
    }
 }
+
+
+/* * portfolio section  */
+/* under  nav bar  */
+.container-bg {
+    background-color: #eceded;
+}
+
+
+
+
+
+/* hover */
+.portfolio-filters:hover{
+    color: #db5050;
+}
+
+/* Boutons filtres */
+.filter-btn {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s;
+    /* background-color: #5bff61; */
+    padding-inline: 40px;
+    
+    }
+        /* hover  */
+    .filter-btn:hover {
+    color: #ff6f5b;
+    }
+
+    /* Items portfolio par défaut */
+    .portfolio-item {
+    transition: all 0.5s ease;
+    transform: scale(1);
+    opacity: 1;
+    }
+
+    /* Hover: overlay et icônes */
+    .portfolio-content {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .portfolio-content img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display: block;
+    width: 60%;
+    height: 60%;
+    }
+
+
+    /*  Assure que le container portfolio ne dépasse pas */
+    .container-portfolio {
+    padding-left: 15px;  
+    padding-right: 15px;
+    }
+
+    /*  ce code c'est pour Supprime marges négatives de la row */
+    .portfolio-container.row {
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+    .portfolio-content:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+    }
+
+    .portfolio-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    }
+
+    .portfolio-content:hover .portfolio-icons {
+    opacity: 1;
+    }
+
+    /* ALL visible */
+    #filter-all:checked ~ .portfolio-container .portfolio-item {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    }
+
+    /* App - seulement 3 visibles */
+    #filter-app:checked ~ .portfolio-container .filter-app:nth-child(1),
+    #filter-app:checked ~ .portfolio-container .filter-app:nth-child(2),
+    #filter-app:checked ~ .portfolio-container .filter-app:nth-child(5) {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    }
+    #filter-app:checked ~ .portfolio-container .filter-app:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(5)) {
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+    }
+
+    /* Product - seulement 3 visibles */
+    #filter-product:checked ~ .portfolio-container .filter-product:nth-child(4),
+    #filter-product:checked ~ .portfolio-container .filter-product:nth-child(5),
+    #filter-product:checked ~ .portfolio-container .filter-product:nth-child(6) {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    }
+    #filter-product:checked ~ .portfolio-container .filter-product:not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(6)) {
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+    }
+
+    /* Branding - seulement 3 visibles */
+    #filter-branding:checked ~ .portfolio-container .filter-branding:nth-child(7),
+    #filter-branding:checked ~ .portfolio-container .filter-branding:nth-child(8),
+    #filter-branding:checked ~ .portfolio-container .filter-branding:nth-child(9) {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    }
+    #filter-branding:checked ~ .portfolio-container .filter-branding:not(:nth-child(7)):not(:nth-child(8)):not(:nth-child(9)) {
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+    }
+
+    /* Books - seulement 3 visibles */
+    #filter-books:checked ~ .portfolio-container .filter-books:nth-child(10),
+    #filter-books:checked ~ .portfolio-container .filter-books:nth-child(11),
+    #filter-books:checked ~ .portfolio-container .filter-books:nth-child(12) {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    }
+    #filter-books:checked ~ .portfolio-container .filter-books:not(:nth-child(10)):not(:nth-child(11)):not(:nth-child(12)) {
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+    }
+    /* Container-Portfolio Animation */
+    .container-portfolio {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    /* Transition pour tous les éléments enfants */
+    .container-portfolio * {
+    transition: all 0.5s ease;
+    }
+
+    /* *  end portfolio section  */
+
+/* *        blog file  */
+.div-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.div-flex   a {
+    text-decoration: none;
+    color: #333;
+}
+.div-flex a:hover{
+    color: orangered;
+}
+
+
+
+
