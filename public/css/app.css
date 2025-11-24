@@ -1007,7 +1007,20 @@ color: #FFFFFF;
 
     /* *  end portfolio section  */
 
-
+/* *        blog file  */
+.div-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.div-flex   a {
+    text-decoration: none;
+    color: #333;
+}
+.div-flex a:hover{
+    color: orangered;
+}
 
 
 
