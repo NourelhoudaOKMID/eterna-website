@@ -372,13 +372,22 @@
 .card i, .card svg {
     font-size: 40px;
     margin-bottom: 15px;
-    color: #ffd700; 
+    /* color: #ffd700;  */
 }
 
 .card:hover {
     transform: translateY(-6px);
     background: #e96b56;
+    color: white;
 }
+.cart div, .box-shadow{
+    border: 1px solid;
+   padding: 10px;
+   box-shadow: 5px 10px #eac29b;
+   background: #e96b56;
+   padding: 10px;
+
+ }
 
 .card h2 {
     font-size: 20px;
@@ -393,6 +402,9 @@
 
 
 @media(max-width: 900px) {
+    .icons{
+        flex-direction: column;
+    }
     .row1, .row2 {
         flex-direction: column;
     }
