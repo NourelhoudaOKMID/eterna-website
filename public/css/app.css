@@ -437,6 +437,30 @@
     border-radius: 20px;
     overflow: hidden;
 }
+.titpar{
+    text-align: center;
+}
+.titpar ,h1{
+    font-size: 2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+.underline {
+  display: inline-block;
+  width: 60px;         
+  height: 4px;         
+  background-color: #e32636; 
+  border-radius: 2px;  
+}
+/* .skills{
+ 
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+}  */
+
 @media(max-width: 900px) {
     .icons{
         flex-direction: column;
